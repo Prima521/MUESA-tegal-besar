@@ -1,0 +1,668 @@
+!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Katalog produk Bank Sampah Tegal Besar Jember"
+    />
+
+    <title>Katalog | Bank Sampah Tegal Besar</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- =================================================
+         NAVBAR
+    ================================================== -->
+
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <!-- LOGO -->
+          <a href="index.html" class="logo">
+            MUESA
+
+            <span> Bank Sampah </span>
+          </a>
+
+          <!-- TOMBOL HAMBURGER -->
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Buka menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- MENU -->
+          <ul class="nav-menu" id="navMenu">
+            <li>
+              <a href="index.html"> Beranda </a>
+            </li>
+
+            <li>
+              <a href="index.html#tentang"> Tentang </a>
+            </li>
+
+            <li>
+              <a href="katalog.html" class="active"> Katalog </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =================================================
+             HERO KATALOG
+        ================================================== -->
+
+      <section class="catalog-hero">
+        <div class="container catalog-hero-content">
+          <p class="catalog-label">MUESA Bank Sampah Tegal Besar</p>
+
+          <h1>Katalog Produk</h1>
+
+          <p>
+            Temukan berbagai produk dan informasi hasil pengelolaan sampah dari
+            MUESA Bank Sampah Tegal Besar Jember.
+          </p>
+        </div>
+      </section>
+
+      <!-- =================================================
+             KATALOG
+        ================================================== -->
+
+      <section class="catalog-section">
+        <div class="container">
+          <!-- Judul -->
+          <div class="catalog-heading">
+            <div>
+              <p>Produk Kami</p>
+
+              <h2>Hasil Pengelolaan Sampah</h2>
+            </div>
+
+            <!-- Search -->
+            <div class="catalog-search">
+              <input
+                type="text"
+                id="searchProduct"
+                placeholder="Cari produk..."
+              />
+            </div>
+          </div>
+
+          <!-- =================================================
+                    PRODUCT GRID
+                ================================================== -->
+
+          <div class="product-grid" id="productGrid">
+            <!-- ===============================
+                PRODUK 1 - TAS DAUR ULANG
+            ================================ -->
+
+            <article class="product-card" data-name="tas daur ulang">
+              <div class="product-image">
+                <img
+                  src="assets/images/TAS DAUR ULANG.jpeg"
+                  alt="Tas Daur Ulang Menggunakan Botol Bekas"
+                />
+
+                <img
+                  src="assets/poster/poster-produk1.jpg"
+                  alt="Poster Tas Daur Ulang"
+                  class="product-image-hover"
+                />
+                <span class="product-badge"> Daur Ulang </span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Kreatif</p>
+
+                <h3>Tas Daur Ulang Menggunakan Tutup Botol Bekas</h3>
+
+                <p class="product-description">
+                  Produk tas yang dibuat dengan memanfaatkan bahan bekas yang
+                  masih dapat digunakan kembali.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Tas Daur Ulang Menggunakan Tutup Botol Bekas',
+                      'assets/images/TAS DAUR ULANG.jpeg',
+                      'Tas Daur Ulang merupakan salah satu produk kreatif dari Bank Sampah Tegal Besar yang memanfaatkan bahan bekas menjadi barang yang dapat digunakan kembali dan memiliki nilai ekonomi.',
+                      'poster.html?id=1',
+                      'assets/pdf/produk1.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span> → </span>
+                </button>
+              </div>
+            </article>
+
+            <!-- ===============================
+                        PRODUK 2
+            ================================ -->
+
+            <!-- ===============================
+                PRODUK 2 - LILIN AROMA TERAPI
+            ================================ -->
+
+            <article
+              class="product-card"
+              data-name="lilin aroma terapi daur ulang"
+            >
+              <div class="product-image">
+                <img
+                  src="assets/images/LILIN DAUR UALNG.jpeg"
+                  alt="Lilin Aroma Terapi"
+                />
+
+                <img
+                  src="assets/poster/poster-produk2.jpg"
+                  alt="Poster Lilin Aroma Terapi"
+                  class="product-image-hover"
+                />
+                <span class="product-badge"> Kerajinan </span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Kreatif</p>
+
+                <h3>Lilin Aroma Terapi</h3>
+
+                <p class="product-description">
+                  Lilin yang dibuat dari pemanfaatan bahan bekas untuk
+                  mengurangi limbah lingkungan serta menghasilkan produk yang
+                  memiliki nilai guna.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Lilin Aroma Terapi',
+                      'assets/images/LILIN DAUR UALNG.jpeg',
+                      'Lilin Aroma Terapi merupakan salah satu produk kreatif Bank Sampah Tegal Besar yang dibuat melalui pemanfaatan bahan bekas menjadi produk yang dapat digunakan kembali, memiliki nilai guna, serta membantu mengurangi limbah lingkungan.',
+                      'poster.html?id=2',
+                      'assets/pdf/produk2.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- ===============================
+                PRODUK 3 - TEMPAT PENSIL
+            ================================ -->
+
+            <article class="product-card" data-name="Sabun Cuci EkoEnzim">
+              <div class="product-image">
+                <img
+                  src="assets/images/SabunCuciPiringEkoEnzim.jpeg"
+                  alt="Sabun Cuci EkoEnzim"
+                />
+
+                <img
+                  src="assets/poster/poster-produk3.jpg"
+                  alt="Poster Sabun Eko Enzim"
+                  class="product-image-hover"
+                />
+                <span class="product-badge"> Daur Ulang </span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Kreatif</p>
+
+                <h3>Sabun Serbaguna</h3>
+
+                <p class="product-description">
+                  Sabun cuci piring yang dibuat dari bahan alami dan ramah
+                  lingkungan.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Sabun Eko Enzim',
+                      'assets/images/SabunCuciPiringEkoEnzim.jpeg',
+                      'Sabun Cuci Eko Enzim merupakan produk kreatif Bank Sampah Tegal Besar yang dibuat melalui pemanfaatan bahan bekas menjadi produk yang dapat digunakan kembali, memiliki nilai guna, serta membantu mengurangi limbah lingkungan.',
+                      'poster.html?id=3',
+                      'assets/pdf/produk3.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- ===============================
+                PRODUK 4 - HIASAN RUMAH
+            ================================ -->
+
+            <article class="product-card" data-name="hiasan rumah daur ulang">
+              <div class="product-image">
+                <img
+                  src="assets/images/Tempat Tisu Rajut.jpeg"
+                  alt="Hiasan Rumah Daur Ulang"
+                />
+
+                <img
+                  src="assets/poster/poster-produk4.jpg"
+                  alt="Poster Tempat Tisu Rajut"
+                  class="product-image-hover"
+                />
+                <span class="product-badge"> Kerajinan </span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Dekorasi</p>
+
+                <h3>Tempat Tisu Rajut</h3>
+
+                <p class="product-description">
+                  Hiasan dekoratif yang dihasilkan melalui pemanfaatan kembali
+                  material yang sudah tidak digunakan.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Tempat Tisu Rajut',
+                      'assets/images/Tempat Tisu Rajut.jpeg',
+                      'Tempat Tisu Rajut merupakan produk dekoratif yang dibuat dengan memanfaatkan kembali material bekas yang sudah tidak digunakan. Bahan tersebut diolah menjadi kerajinan yang menarik, bermanfaat, dan memiliki nilai guna.',
+                      'poster.html?id=4',
+                      'assets/pdf/produk4.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- ===============================
+                PRODUK 5 - WADAH SERBAGUNA
+            ================================ -->
+
+            <article class="product-card" data-name="wadah Botol Bekas">
+              <div class="product-image">
+                <img src="assets/images/produk5.jpg" alt="Wadah Botol bekas" />
+
+                <span class="product-badge"> Daur Ulang </span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Rumah Tangga</p>
+
+                <h3>Draw Box Wadah Botol Bekas</h3>
+
+                <p class="product-description">
+                  Wadah sederhana yang dibuat dengan memanfaatkan material bekas
+                  agar dapat digunakan kembali.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Wadah Botol Bekas',
+                      'assets/images/produk5.jpg',
+                      'Wadah Botol Bekas merupakan produk rumah tangga yang dibuat dengan memanfaatkan material bekas menjadi barang yang dapat digunakan kembali untuk berbagai kebutuhan sehari-hari serta membantu mengurangi jumlah sampah.',
+                      'poster.html?id=5',
+                      'assets/pdf/produk5.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- ===============================
+                PRODUK 6 - KERANJANG DAUR ULANG
+            ================================ -->
+
+            <article
+              class="product-card"
+              data-name="komposter air lidi tanpa kran"
+            >
+              <div class="product-image">
+                <img
+                  src="assets/images/produk6.jpg"
+                  alt="Keranjang Daur Ulang"
+                />
+
+                <img
+                  src="assets/poster/poster-produk6.jpg"
+                  alt="Poster Komposter Air Lidi Tanpa Kran"
+                  class="product-image-hover"
+                />
+                <span class="product-badge"> Daur Ulang </span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Kreatif</p>
+
+                <h3>Komposter Air Lidi Tanpa Kran</h3>
+
+                <p class="product-description">
+                  Produk komposter air lidi tanpa kran yang dibuat melalui
+                  proses pemanfaatan kembali material bekas sehingga dapat
+                  digunakan kembali.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Komposter Air Lidi Tanpa Kran',
+                      'assets/images/produk6.jpg',
+                      'Komposter Air Lidi Tanpa Kran merupakan salah satu produk kreatif dari Bank Sampah Tegal Besar yang dibuat melalui pemanfaatan kembali material bekas menjadi barang yang dapat digunakan kembali, memiliki nilai guna, serta membantu mengurangi limbah lingkungan.',
+                      'poster.html?id=6',
+                      'assets/pdf/produk6.pdf',
+                    )
+                  "
+                >
+                  More Info
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- Produk 7-->
+            <article class="product-card" data-name="vas bunga daur ulang">
+              <div class="product-image">
+                <!-- FOTO ASLI -->
+                <img
+                  src="assets/images/Vas Bunga Daur Ulang.jpeg"
+                  alt="Vas Bunga Daur Ulang"
+                />
+
+                <!-- FOTO POSTER -->
+                <img
+                  src="assets/poster/poster-produk7.png"
+                  alt="Poster Vas Bunga Daur Ulang"
+                  class="product-image-hover"
+                />
+
+                <span class="product-badge">Daur Ulang</span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Kreatif</p>
+
+                <h3>Vas Bunga Daur Ulang</h3>
+
+                <p class="product-description">
+                  Produk vas bunga daur ulang yang dibuat melalui proses
+                  pemanfaatan kembali material bekas sehingga dapat digunakan
+                  kembali.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Vas Bunga Daur Ulang',
+                      'assets/images/Vas Bunga Daur Ulang.jpeg',
+                      'Vas Bunga Daur Ulang merupakan salah satu produk kreatif yang dibuat dengan memanfaatkan material bekas dan mengolahnya kembali menjadi barang yang berguna, dapat digunakan kembali, serta memiliki nilai ekonomi.',
+                      'poster.html?id=7',
+                      'assets/pdf/produk6.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+
+            <article
+              class="product-card"
+              data-name="gantungan kunci daur ulang"
+            >
+              <div class="product-image">
+                <!-- FOTO ASLI -->
+                <img
+                  src="assets/images/Gantungan Kunci.png"
+                  alt="Gantungan Kunci Daur Ulang"
+                />
+
+                <!-- FOTO POSTER -->
+                <img
+                  src="assets/poster/poster-produk8.jpg"
+                  alt="Poster Gantungan Kunci Daur Ulang"
+                  class="product-image-hover"
+                />
+
+                <span class="product-badge">Daur Ulang</span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Kreatif</p>
+
+                <h3>Gantungan Kunci Daur Ulang</h3>
+
+                <p class="product-description">
+                  Gantungan kunci yang dibuat dengan memanfaatkan material bekas
+                  sehingga dapat digunakan kembali menjadi produk kreatif yang
+                  memiliki nilai guna.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Gantungan Kunci Daur Ulang',
+                      'assets/images/Gantungan Kunci.png',
+                      'Gantungan Kunci Daur Ulang merupakan produk kreatif yang dibuat dengan memanfaatkan material bekas dan mengolahnya kembali menjadi barang yang dapat digunakan kembali serta memiliki nilai guna.',
+                      'poster.html?id=8',
+                      'assets/pdf/produk8.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card" data-name="magnet kulkas daur ulang">
+              <div class="product-image">
+                <!-- FOTO ASLI -->
+                <img
+                  src="assets/images/Magnet Kulkas.jpeg"
+                  alt="Magnet Kulkas Daur Ulang"
+                />
+
+                <!-- FOTO POSTER -->
+                <img
+                  src="assets/poster/poster-produk9.jpg"
+                  alt="Poster Magnet Kulkas Daur Ulang"
+                  class="product-image-hover"
+                />
+
+                <span class="product-badge">Daur Ulang</span>
+              </div>
+
+              <div class="product-content">
+                <p class="product-category">Produk Kreatif</p>
+
+                <h3>Magnet Kulkas Daur Ulang</h3>
+
+                <p class="product-description">
+                  Magnet kulkas yang dibuat dengan memanfaatkan material bekas
+                  menjadi produk kreatif yang dapat digunakan sebagai hiasan
+                  sekaligus memiliki nilai guna.
+                </p>
+
+                <!-- MORE INFO -->
+                <button
+                  class="more-info"
+                  onclick="
+                    openModal(
+                      'Magnet Kulkas Daur Ulang',
+                      'assets/images/Magnet Kulkas.jpeg',
+                      'Magnet Kulkas Daur Ulang merupakan produk kreatif yang dibuat dengan memanfaatkan material bekas dan mengolahnya kembali menjadi barang yang dapat digunakan sebagai hiasan serta memiliki nilai guna.',
+                      'poster.html?id=9',
+                      'assets/pdf/produk9.pdf',
+                    )
+                  "
+                >
+                  More Info
+
+                  <span>→</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Pesan saat pencarian tidak ditemukan -->
+
+          <div id="emptyProduct" class="empty-product">
+            <h3>Produk tidak ditemukan</h3>
+
+            <p>Coba gunakan kata pencarian yang berbeda.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =================================================
+          MODAL DETAIL PRODUK
+      ================================================== -->
+
+    <div class="product-modal" id="productModal">
+      <!-- OVERLAY -->
+      <div class="modal-overlay" onclick="closeModal()"></div>
+
+      <!-- MODAL CARD -->
+      <div class="modal-card">
+        <!-- TOMBOL CLOSE -->
+        <button class="modal-close" onclick="closeModal()" aria-label="Tutup">
+          ×
+        </button>
+
+        <!-- GAMBAR PRODUK -->
+        <div class="modal-image">
+          <img id="modalImage" src="" alt="Gambar Produk" />
+        </div>
+
+        <!-- INFORMASI PRODUK -->
+        <div class="modal-content">
+          <p class="modal-label">Detail Produk</p>
+
+          <h2 id="modalTitle">Nama Produk</h2>
+
+          <div id="modalDescription" class="modal-description">
+            <p>Deskripsi produk.</p>
+          </div>
+
+          <!-- BUTTON -->
+          <div class="modal-buttons">
+            <!-- MENUJU HALAMAN POSTER -->
+            <a href="#" id="modalPoster" class="modal-btn modal-btn-outline">
+              Lihat Poster
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================
+                          FOOTER
+    ================================================== -->
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-about">
+          <h3>MUESA Bank Sampah Tegal Besar</h3>
+
+          <p>
+            Bersama menciptakan lingkungan yang bersih, sehat, dan bernilai.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+
+          <p>
+            <strong>WhatsApp</strong>
+          </p>
+
+          <p>Bu Nurul : 081233836382</p>
+        </div>
+
+        <div class="footer-location">
+          <h4>Lokasi</h4>
+
+          <p>Tegal Besar</p>
+
+          <p>Kecamatan Kaliwates</p>
+
+          <p>Kabupaten Jember, Jawa Timur</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 MUESA Bank Sampah Tegal Besar Jember. All Rights Reserved.
+        </p>
+        <p>Developed by Prima</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
