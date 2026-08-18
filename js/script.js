@@ -8,7 +8,7 @@ const posterData = {
     category: "Produk Kreatif",
     description:
       "Tas Daur Ulang merupakan salah satu produk kreatif dari Bank Sampah Tegal Besar yang memanfaatkan bahan bekas menjadi barang yang dapat digunakan kembali dan memiliki nilai ekonomi.",
-    poster: "assets/poster/Poster-produk11.jpeg",
+    poster: "assets/poster/poster-produk11.jpeg",
   },
 
   2: {
